@@ -186,8 +186,6 @@ TEST_CASE("Test replacement of s/z i/y g/j t/d in one word") {
     CHECK(find(text, "zyghtseeing") == string("sightseeing"));
     CHECK(find(text, "zyjhtseeing") == string("sightseeing"));
     CHECK(find(text, "zyjhtzeeing") == string("sightseeing"));
-    CHECK(find(text, "zyihtseeyng") == string("sightseeing"));
-    CHECK(find(text, "zyihtseeinj") == string("sightseeing"));
     CHECK(find(text, "zyjhdzeeynj") == string("sightseeing"));
     CHECK(find(text, "sightseeing") == string("sightseeing"));
     CHECK(find(text, "zyjhdseeing") == string("sightseeing"));
